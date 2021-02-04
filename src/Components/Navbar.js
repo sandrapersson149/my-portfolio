@@ -4,13 +4,11 @@ import { Link } from "react-router-dom";
 const StyledNAV = styled.nav`
 box-shadow: 3px 0px 3px 1px rgba(65, 65, 65, 0.25);
 position: absolute;
-left: 0;
 z-index: 1;
-height: 100vh;
-width: 15%;
-/* width: 270px; */
+height: 100%;
+background-color: white;
 ul {
-  margin-top: 25%;
+  margin-top: 50%;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -23,7 +21,7 @@ a {
 li {
   margin: 30px;
   padding: 8px;
-  font-size: 2.2em;
+  font-size: 30px;
   font-weight: 200;
   border: 2px solid white;
   text-align: center;

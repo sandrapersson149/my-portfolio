@@ -4,15 +4,17 @@ import awesomecakeTWO from '../awesomecake2.PNG';
 
 const StyledDIV = styled.div`
 background: #BDEFDA;
-width: 85%;
+width: 100%;
 height: 100%;
 position: absolute;
 right: 0;
 display: flex;
 flex-wrap: wrap;
+justify-content: center;
+
 h2 {
 width: 100%;
-margin-top: 50px;
+margin-top: 30px;
 text-align: center;
 font-weight: 800;
 font-size: 70px;
@@ -22,11 +24,12 @@ text-decoration-color: #FBF293;
 }
 `;
 
-const StyledSEC = styled.section`
+const ProjectCard = styled.section`
 background-color: white;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-width: 40%;
-margin: auto;
+width: 30%;
+/* margin: auto; */
+
 padding: 15px;
 display: flex;
 flex-wrap: wrap;
@@ -39,9 +42,9 @@ p {
   padding: 15px;
 }
 img {
-  margin: 15px;
+  margin: 5px;
   width: 30%;
-  height: 100%;
+  /* height: 100%; */
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 `;
@@ -53,35 +56,12 @@ const Projects = () => {
     <StyledDIV>
       <h2>Look at some of my work</h2>
 
-      <StyledSEC>
+      {/* <ProjectCard>
         <h3>Awesomecake - ip1</h3>
-        <p>Felis eget nunc lobortis mattis aliquam faucibus purus in massa. Orci dapibus ultrices in iaculis. Enim sit amet venenatis urna cursus. Hac habitasse platea dictumst vestibulum rhoncus est.Orci dapibus ultrices in iaculis. Enim sit amet venenatis urna cursus.  </p>
+        <p>Felis eget nunc lobortis mattis aliquam faucibus purus in massa. Orci dapibus ultrices in iaculis. Enim sit amet venenatis urna cursus. Hac habitasse platea dictumst vestibulum.</p>
         <img src={awesomecakeONE}></img>
         <img src={awesomecakeTWO}></img>
-      </StyledSEC>
-
-      <StyledSEC>
-        <h3>Awesomecake - ip1</h3>
-        <p>Felis eget nunc lobortis mattis aliquam faucibus purus in massa. Orci dapibus ultrices in iaculis. Enim sit amet venenatis urna cursus. Hac habitasse platea dictumst vestibulum rhoncus est.Orci dapibus ultrices in iaculis. Enim sit amet venenatis urna cursus. Hac habitasse platea dictumst vestibulum rhoncus est.Felis eget nunc lobortis mattis aliquam faucibus purus in massa. </p>
-        <img src={awesomecakeONE}></img>
-        <img src={awesomecakeTWO}></img>
-      </StyledSEC>
-
-      <StyledSEC>
-        <h3>Awesomecake - ip1</h3>
-        <p>Felis eget nunc lobortis mattis aliquam faucibus purus in massa. Orci dapibus ultrices in iaculis. Enim sit amet venenatis urna cursus. Enim sit amet vestibulum rhoncus est.Felis eget nunc lobortis mattis aliquam faucibus purus in massa. </p>
-        <img src={awesomecakeONE}></img>
-        <img src={awesomecakeTWO}></img>
-      </StyledSEC>
-
-      <StyledSEC>
-        <h3>Awesomecake - ip1</h3>
-        <p>Felis eget nunc lobortis mattis aliquam faucibus purus in massa. Orci dapibus ultrices in iaculis. Enim sit amet venenatis urna cursus. Hac habitasse platea dictumst vestibulum rhoncus est.Orci dapibus ultrices in iaculis. Enim sit amet venenatis urna cursus </p>
-        <img src={awesomecakeONE}></img>
-        <img src={awesomecakeTWO}></img>
-      </StyledSEC>
-
-
+      </ProjectCard> */}
 
 
 

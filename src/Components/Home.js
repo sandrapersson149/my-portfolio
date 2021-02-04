@@ -3,20 +3,17 @@ import avatar from '../avatar.png';
 
 const StyledDIV = styled.div`
 background: #DBF2FF;
-width: 85%;
+width: 100%;
 height: 100%;
 position: absolute;
-right: 0;
-/* padding-top: 80px; */
 h1 {
   width: 650px;
-  height: 300px;
   font-size: 90px;
   font-weight: 800;
   color: #353531;
 }
 span {
-  border-bottom: 10px solid #DAB2FB;
+  border-bottom: 7px solid #DAB2FB;
 }
 img {
   height: 300px;
