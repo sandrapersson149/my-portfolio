@@ -25,14 +25,73 @@ li {
   font-weight: 200;
   border: 2px solid white;
   text-align: center;
+  
 }
 li:hover {
-  border: 2px solid gray;
   width: 100%;
   background-color: white;
   border: 2px solid #B8B8B8;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
 }
+
+@media screen and (max-width: 1200px) {
+  height: 100px;
+  width: 100%;
+  ul {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0;
+  }
+  li {
+    margin-top: 30px;
+    width: 50%;
+    padding: 8px;
+    font-size: 25px;
+    border: none;
+  }
+  li:hover {
+    border: none;
+    width: 50%;
+    border: none;
+    box-shadow: none;
+    opacity: 0.5;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  height: 80px;
+  li {
+    margin-top: 20px;
+    width: 50%;
+    padding: 8px;
+    font-size: 20px;
+    border: none;
+  }
+  li:hover {
+    border: none;
+    width: 50%;
+    border: none;
+    box-shadow: none;
+    opacity: 0.5;
+  }
+}
+@media screen and (max-width: 500px) {
+  height: 60px;
+  li {
+    margin: 8px;
+    width: 15%;
+    font-size: 18px;
+    border: none;
+  }
+  li:hover {
+    border: none;
+    width: 15%;
+    border: none;
+    box-shadow: none;
+    opacity: 0.5;
+  }
+}
+
 `;
 
 

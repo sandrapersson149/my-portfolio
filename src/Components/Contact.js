@@ -1,7 +1,12 @@
 import styled from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
+const GlobalStyle = createGlobalStyle`
+ body {
+   background-color: #DBF2FF;
+ }
+ `
 const StyledDIV = styled.div`
-background: #EDD6FF;
 width: 100%;
 height: 100%;
 position: absolute;
@@ -30,21 +35,30 @@ a {
 }
 a:hover {
   opacity: 0.5;
+  text-decoration: underline;
 }
 
+@media screen and (max-width: 1000px) {
+  h2 {
+    font-size: 30px;
+  }
+}
 `;
 
 const Contact = () => {
   return (
+    <>
+    <GlobalStyle />
     <StyledDIV>
       <section>
         <h2>Want to get in touch with me?</h2>
         <a href="https://github.com/sandrapersson149?tab=repositories">Github</a>
-        <a href="mailto:sandraspersson@hotmail.com">Mail</a>
+        <a href="mailto:sandrapersson.dev@gmail.com">Mail to me</a>
         <a href="https://www.linkedin.com/in/sandra-persson-660b551b5/">Linkedin</a>
       </section>
 
     </StyledDIV>
+    </>
   );
 }
 

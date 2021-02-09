@@ -2,8 +2,15 @@ import styled from 'styled-components';
 import awesomecakeONE from '../awesomecake1.PNG';
 import awesomecakeTWO from '../awesomecake2.PNG';
 
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+ body {
+   background-color: #BDEFDA;
+ }
+ `
+
 const StyledDIV = styled.div`
-background: #BDEFDA;
 width: 100%;
 height: 100%;
 position: absolute;
@@ -53,6 +60,8 @@ img {
 
 const Projects = () => {
   return (
+    <>
+    <GlobalStyle />
     <StyledDIV>
       <h2>Look at some of my work</h2>
 
@@ -63,9 +72,9 @@ const Projects = () => {
         <img src={awesomecakeTWO}></img>
       </ProjectCard> */}
 
-
-
     </StyledDIV>
+    <GlobalStyle/>
+    </>
   );
 }
 

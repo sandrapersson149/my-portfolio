@@ -8,17 +8,18 @@ import About from './Components/About';
 import Projects from './Components/Projects';
 import Contact from './Components/Contact';
 
-// import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
-// const GlobalStyle = createGlobalStyle`
-// * {
-
-// }
-// `
+const GlobalStyle = createGlobalStyle`
+ body {
+   background-color: #DBF2FF;
+ }
+ `
 
 function App() {
   return (
     <Router>
+      < GlobalStyle />
       <div>
         <Navbar />
 
