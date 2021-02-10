@@ -25,7 +25,6 @@ li {
   font-weight: 200;
   border: 2px solid white;
   text-align: center;
-  
 }
 li:hover {
   width: 100%;
@@ -33,7 +32,6 @@ li:hover {
   border: 2px solid #B8B8B8;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
 }
-
 @media screen and (max-width: 1200px) {
   height: 100px;
   width: 100%;
@@ -57,7 +55,6 @@ li:hover {
     opacity: 0.5;
   }
 }
-
 @media screen and (max-width: 680px) {
   height: 80px;
   li {
@@ -91,9 +88,7 @@ li:hover {
     opacity: 0.5;
   }
 }
-
 `;
-
 
 const Navbar = () => {
   return (
@@ -102,14 +97,16 @@ const Navbar = () => {
         <li>
           <Link to='/'>Home</Link>
         </li>
-        <li><Link to='/About'>About</Link>
+        <li>
+          <Link to='/About'>About</Link>
         </li>
-        <li><Link to='/Projects'>Projects</Link>
+        <li>
+          <Link to='/Projects'>Projects</Link>
         </li>
-        <li><Link to='/Contact'>Contact</Link>
+        <li>
+          <Link to='/Contact'>Contact</Link>
         </li>
       </ul>
-
     </StyledNAV>
   );
 }

@@ -7,24 +7,17 @@ const GlobalStyle = createGlobalStyle`
  }
  `
 const StyledDIV = styled.div`
-width: 100%;
-height: 100%;
-position: absolute;
-right: 0;
 display: flex;
-
 justify-content: center;
-
 section {
   display: flex;
   flex-direction: column;
-  margin: auto;
   text-align: center;
 }
 h2 {
+  margin-top: 130px;
   font-weight: 800;
   font-size: 60px;
-  line-height: 65px;
   color: #353531;
 }
 a {
@@ -38,9 +31,25 @@ a:hover {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1300px) {
   h2 {
-    font-size: 30px;
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 800px) {
+  h2 {
+    font-size: 35px;
+  }
+  a {
+  font-size: 30px;
+  }
+}
+@media screen and (max-width: 550px) {
+  h2 {
+    width: 300px;
+  }
+  a {
+  font-size: 20px;
   }
 }
 `;
@@ -56,7 +65,6 @@ const Contact = () => {
         <a href="mailto:sandrapersson.dev@gmail.com">Mail to me</a>
         <a href="https://www.linkedin.com/in/sandra-persson-660b551b5/">Linkedin</a>
       </section>
-
     </StyledDIV>
     </>
   );
