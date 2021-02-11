@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import sandra3 from './Images/sandra3.jpg';
+import sandra3 from './Images/sandra.png';
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`

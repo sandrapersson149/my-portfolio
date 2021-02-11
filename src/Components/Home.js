@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import avatar from './Images/sandra1.jpg';
+import avatar from './Images/avatar.png';
 import { createGlobalStyle } from 'styled-components';
 import Weather from './Weather.js'
 
