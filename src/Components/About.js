@@ -1,15 +1,11 @@
 import styled from 'styled-components';
-import avatar from '../avatar.png';
-import sandra3 from '../sandra3.jpg';
-import images from './images.js';
-
+import sandra3 from './Images/sandra3.jpg';
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
  body {
    background-color: #FCF6B0;
- }
- `
+ }`;
 
 const StyledDIV = styled.div`
 background: #FCF6B0;
@@ -83,7 +79,6 @@ img {
   }
 }
 @media screen and (max-width: 550px) {
-
   img {
     height: 150px;
     margin: 120px 0 25px 0;
@@ -98,8 +93,7 @@ img {
     width: 100px;
     font-size: 30px;
   }
-}
-`;
+}`;
 
 const About = () => {
   return (
@@ -113,8 +107,6 @@ const About = () => {
         <p>In school I studied Media and Graphic design. I have always been interested in technology and design. So now a couple of years after graduating I decided to seek new opportunities. I chose Front end development because it sounded interesting and fun! I like that there is so much to learn and different paths to take with it. </p>
         <p>Now i'm on my way to my dream job/occupation and feel so excited for the future. </p>
       </section>
-      
-
     </StyledDIV>
     </>
   );

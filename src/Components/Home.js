@@ -1,6 +1,7 @@
 import styled from 'styled-components';
-import avatar from '../avatar.png';
+import avatar from './Images/sandra1.jpg';
 import { createGlobalStyle } from 'styled-components';
+import Weather from './Weather.js'
 
 const GlobalStyle = createGlobalStyle`
  body {
@@ -20,7 +21,7 @@ top: 5%;
   }
   h1 {
     width: 600px;
-    font-size: 90px;
+    font-size: 85px;
     font-weight: 800;
     color: #353531;
   }
@@ -45,33 +46,32 @@ top: 5%;
 
 @media screen and (max-width: 900px) {
   left: 0;
-  top: 20%;
+  top: 27%;
   main {
     margin: 0;
     width: 100%;
   }
   h1 {
     text-align: center;
-    width: 600px;
-    font-size: 80px;
+    width: 500px;
+    font-size: 70px;
   }
   img {
     height: 250px;
     margin: 20px 0;
   }
 }
-
 @media screen and (max-width: 650px) {
   left: 0;
-  top: 20%;
+  top: 25%;
   main {
     margin: 0;
     width: 100%;
   }
   h1 {
-    width: 100%;
+    width: 90%;
     text-align: center;
-    font-size: 65px;
+    font-size: 60px;
   }
   img {
     height: 200px;
@@ -86,7 +86,7 @@ top: 5%;
 }
 @media screen and (max-width: 500px) {
   left: 0;
-  top: 20%;
+  top: 25%;
   main {
     margin: 0;
     width: 100%;
@@ -94,7 +94,7 @@ top: 5%;
   h1 {
     width: 90%;
     text-align: center;
-    font-size: 50px;
+    font-size: 45px;
   }
   img {
     height: 200px;
@@ -103,13 +103,27 @@ top: 5%;
   p {
     font-size: 20px;
   }
+}`;
+
+const WeatherDIV = styled.div `
+position: absolute;
+right: 15px;
+top: 10px;
+@media screen and (max-width: 1200px) {
+top: 100px;
 }
-`;
+@media screen and (max-width: 500px) {
+top: 60px;
+}`;
 
 const Home = () => {
   return (
     <>
     <GlobalStyle />
+      <WeatherDIV>
+        <Weather />
+      </WeatherDIV>
+    
     <StyledDIV>
       <main>
         <h1>Hello, it's me <span>Sandra</span></h1>

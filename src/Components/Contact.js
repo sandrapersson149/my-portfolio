@@ -4,8 +4,8 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
  body {
    background-color: #DBF2FF;
- }
- `
+ }`;
+
 const StyledDIV = styled.div`
 display: flex;
 justify-content: center;
@@ -30,7 +30,6 @@ a:hover {
   opacity: 0.5;
   text-decoration: underline;
 }
-
 @media screen and (max-width: 1300px) {
   h2 {
     font-size: 50px;
@@ -51,8 +50,7 @@ a:hover {
   a {
   font-size: 20px;
   }
-}
-`;
+}`;
 
 const Contact = () => {
   return (
