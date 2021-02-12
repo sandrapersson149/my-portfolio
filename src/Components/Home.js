@@ -17,11 +17,11 @@ top: 5%;
   justify-content: center;
   flex-wrap: wrap;
   width: 80%;
-  margin: 80px;
+  margin: 70px 30px 20px 90px;
   }
   h1 {
-    width: 600px;
-    font-size: 85px;
+    width: 530px;
+    font-size: 80px;
     font-weight: 800;
     color: #353531;
   }
@@ -29,14 +29,15 @@ top: 5%;
     border-bottom: 7px solid #DAB2FB;
   }
   img {
-    height: 350px;
+    height: 280px;
+    
     border-radius: 100%;
     border: 2px solid white;
     box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.25);
     margin: 20px;
   }
   p {
-    font-size: 40px;
+    font-size: 35px;
     text-align: center;
     font-weight: 200;
   }
@@ -130,7 +131,7 @@ const Home = () => {
           <img src={avatar} alt="avatar" />
             <section>
               <p>Aspiring Front end developer</p>
-              <p>Living in Stockholm, Sweden</p>
+              <p>Student at KYH Stockholm</p>
               <p>Love design in any shape or form</p>
             </section>
       </main>

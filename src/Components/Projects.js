@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
+
 import awesomecakeONE from './Images/awesomecake1.PNG';
 import awesomecakeTWO from './Images/awesomecake2.PNG';
 import festival1 from './Images/festival1.PNG';
@@ -6,7 +8,7 @@ import festival2 from './Images/festival2.PNG';
 import weather1 from './Images/weather1.PNG';
 import portfolioDemo1 from './Images/portfolio-demo1.PNG';
 import portfolioDemo2 from './Images/portfolio-demo2.PNG';
-import { createGlobalStyle } from 'styled-components';
+
 
 const GlobalStyle = createGlobalStyle`
  body {

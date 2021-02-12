@@ -36,7 +36,7 @@ section {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 img {
-  height: 350px;
+  height: 300px;
   border-radius: 100%;
   box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.25);
   margin-right: 50px;
